@@ -1,22 +1,22 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-container {
+  background-color: #36454f;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  text-align: center;
+
 }
 
-.App-link {
-  color: #09d3ac;
+.bey-card {
+  background-color: gold;
+  width: 30em;
+  padding: 8px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 15px;
+}
+
+img {
+  width: 25em;
 }
