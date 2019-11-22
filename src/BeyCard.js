@@ -18,6 +18,7 @@ const BeyCard = (props) => {
         src={ img }
         alt={ name }
         onClick={ clickHandler}
+
       />
     </div>
   );

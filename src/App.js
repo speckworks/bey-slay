@@ -18,11 +18,21 @@ class App extends Component {
     .then(beys => this.setState({ beys }))
   }
 
+clickHandler = (bey) => {
+  let updateBeys = [...this.state.beys]
+  let foundBey = this.state.beys.find(beyObj => beyObj.id === bey.id)
+  foundBey.favorite = !foundBey.favorite
+  this.setState({beys: updateBeys})
+}
+
+
+
+
 
 render(){
 return (
   <div className="main-container">
-    <BeyContainer beys={this.state.beys}/>
+    <BeyContainer beys={this.state.beys} clickHandler={this.clickHandler}/>
     <Favorites />
   </div>
   );
